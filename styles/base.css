@@ -71,10 +71,16 @@ main {
 .card *{
     margin: 20px;
 }
+
+
+.card {
+    font-size: 14px;
+}
 .card h2{
     background-color: blue;
     color: white;
     margin: 0px;
+    font-size: 24px;
 }
 
 footer{
