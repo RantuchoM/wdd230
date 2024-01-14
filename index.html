@@ -1,1 +1,66 @@
-holygrail.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martín Rantucho - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Martín Rantucho. Course assignment portal.">
+    <meta name="author" content="Martín Rantucho">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+</head>
+
+<body>
+    <header>
+
+        <img src="images/profile.jpg" alt="Martín Profile Image" id="profile-image">
+        <span>Martín Rantucho</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Information</h2>
+
+            <p>Weather:</p>
+            <p>Visits: </p>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy; <span id="currentYear"></span> Martín Rantucho. Viedma, Argentina</p>
+
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>

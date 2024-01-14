@@ -1,0 +1,27 @@
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #card {
+        max-width: none; 
+        margin: 100px;
+    }
+    
+    main h1{
+        grid-column: 1 / 3;
+    }
+}
+
+
