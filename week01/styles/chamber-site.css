@@ -1,0 +1,31 @@
+body {
+    font-family: 'Salsa', serif;
+    color: #333;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Salsa', serif;
+    color: #1a237e;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #1a237e;
+    border-bottom: 2px solid #1a237e;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
