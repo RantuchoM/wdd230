@@ -24,8 +24,7 @@
 
     main {
         display: grid;
-        /*grid-template-columns: repeat(2, 1fr);
-        gap: 20px;*/
+        /*I'll decide further aspects of the grid*/
     }
 
     .card {
@@ -33,7 +32,4 @@
         margin: 20px; /* Adjust the margin to your preference */
     }
     
-    main h1 {
-        /*grid-column: 1 / 3;*/
-    }
 }
