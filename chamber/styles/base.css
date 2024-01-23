@@ -20,7 +20,26 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+#hero-img {
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
 
+#hero-img img{
+    width: 100%;
+    height: auto;
+    grid-row: 1/5;
+    grid-column: 1/4;
+}
+#join-btn{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    opacity: 60%;
+    font-size: 3em;
+}
 #profile-image {
     width: 100px;
 }
@@ -31,7 +50,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 1px solid --secondary-text;
+    border: 1px solid var(--secondary-text);
 }
 section h2 {
     font-family: 'Oswald', sans-serif;

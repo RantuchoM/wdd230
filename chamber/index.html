@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bahía Blanca Chamber Site - Home Page">
     <meta name="author" content="Martín Rantucho">
-    <title>Bahía Blanca Chamber Site</title>
+    <title>Bahía Blanca Chamber of Commerce</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -29,10 +29,7 @@
 <body>
 
     <header>
-        <h1>Bahía Blanca Chamber Site</h1>
-        <br>
-        <button id="mode">☾</button>
-        
+        <h1>Bahía Blanca Chamber of Commerce</h1>
     </header>
     <nav>
         <button id="menu"></button>
@@ -41,15 +38,28 @@
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
+            <li><a id="mode">☾</a></li>
         </ul>
     </nav>
     <main>
-
+        <div id="hero-img">
+            <img src="images/hero.jpg" alt="Hero Image of Bahía Blanca">
+            <button id="join-btn">Join</button>
+        </div>
+        <section id="currentEvents">
+            <h2>Events</h2>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+        </section>
+        <section id="spotlights">
+            <h2>Spotlights</h2>
+        </section>
     </main>
     <footer>
 
         <p>&copy; <span id="currentYear"></span> Martín Rantucho. Viedma, Argentina</p>
-
+        <p>WDD 230 Project</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
