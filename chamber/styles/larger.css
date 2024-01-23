@@ -1,0 +1,39 @@
+@media (min-width: 640px) {
+    
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        max-width: none;
+        margin: 20px; /* Adjust the margin to your preference */
+    }
+    
+    main h1 {
+        grid-column: 1 / 3;
+    }
+}
