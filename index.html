@@ -10,28 +10,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <script src="scripts/script.js"></script>
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title"   content="Martín Rantucho - WDD 230 - Web Frontend Development">
-    <meta property="og:type"    content="website">
-    <meta property="og:image"   content="https://www.bahia.gob.ar/wp-content/uploads/2017/01/WhatsApp-Image-2022-11-24-at-09.07.29.jpeg">
-    <meta property="og:url"     content="https://rantuchom.github.io/wdd230">
-    <meta name="twitter:card"   content="summary_large_image">
+    <meta property="og:title" content="Martín Rantucho - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.bahia.gob.ar/wp-content/uploads/2017/01/WhatsApp-Image-2022-11-24-at-09.07.29.jpeg">
+    <meta property="og:url" content="https://rantuchom.github.io/wdd230">
+    <meta name="twitter:card" content="summary_large_image">
 
 
 </head>
 
 <body>
     <header>
-        
+
         <img src="images/profile.jpg" alt="Martín Profile Image" id="profile-image">
         <span>Martín Rantucho--</span>
         <div id="mode">☾</div>
-        
+
     </header>
 
     <nav>
@@ -45,6 +48,17 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-portrait.webp">
+                <img src="images/hero-large.webp" alt="Buenos Aires Temple" width="960">
+
+            </picture>
+            <div class="herolabel">
+                <p>Buenos Aires <br>Temple</p>
+            </div>
+        </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
 
         <section class="card">
@@ -54,8 +68,11 @@
                 <li>Week 1: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media
                         Query</a> | <a href="https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/WNmoPBJ">JS Pen</a>
                 </li>
-                <li>Week 2: <a href="https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/mdowPgZ">Hamburguer Pen</a> <a href="week02/bom.html">BOM</a></li>
-                <li>Week 3: </li>
+                <li>Week 2: <a href="https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/mdowPgZ">Hamburguer Pen</a>
+                    <a href="week02/bom.html">BOM</a>
+                </li>
+                <li>Week 3: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazy-loading.html">Lazy
+                        Loading</a> | <a href="week03/responsive-images.html">Responsive</a> | <a href="week03/bom.html">BOM</a></li>
                 <li>Week 4: </li>
                 <li>Week 5: </li>
                 <li>Week 6: </li>
@@ -69,6 +86,12 @@
             <p>Weather:</p>
             <p>Visits: </p>
         </section>
+        <source media="(max-width: 640px)" widthset="400" heightset="1050">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48306.146642820684!2d-63.    04142549414839!3d-40.82501664144553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95f698126201d8c5%3A0xc439042877c7ae8!2sViedma%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1706123084763!5m2!1ses-419!2sar"
+            width="100%" height="auto" style="border:0;" allowfullscreen="true" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" id="map">
+        </iframe>
     </main>
 
     <footer>

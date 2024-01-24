@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Images - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Martín Rantucho. Course assignment portal.">
+    <meta name="author" content="Martín Rantucho">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/script.js"></script>
+
+
+    <meta property="og:title" content="Lazy Images - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.bahia.gob.ar/wp-content/uploads/2017/01/WhatsApp-Image-2022-11-24-at-09.07.29.jpeg">
+    <meta property="og:url" content="https://rantuchom.github.io/wdd230">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Image</h1>
+        <div id="mode">☾</div>
+
+    </header>
+    <main>
+        <picture>
+            <img src="images/img1.jpg" alt="Image 1" loading="lazy" width="500" height="1000">
+        </picture>
+        <picture>
+            <img src="images/img2.jpg" alt="Image 2" loading="lazy" width="500" height="1000">
+        </picture>
+        <picture>
+            <img src="images/img3.jpg" alt="Image 3" loading="lazy" width="500" height="1000">
+        </picture>
+        <picture>
+            <img src="images/img4.jpg" alt="Image 4" loading="lazy" width="500" height="1000">
+        </picture>
+        <picture>
+            <img src="images/img5.jpg" alt="Image 5" loading="lazy" width="500" height="1000">
+        </picture>
+        <picture>
+            <img src="images/img6.jpg" alt="Image 6" loading="lazy" width="500" height="1000">
+        </picture>
+    </main>
+
+    <footer>
+
+        <p>&copy; <span id="currentYear"></span> Martín Rantucho. Viedma, Argentina</p>
+
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>
