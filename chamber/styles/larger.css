@@ -17,15 +17,39 @@
     nav ul {
         display: flex;
     }
-
+    #join-btn{
+        font-size: 3em;
+    }
     nav ul li {
         flex: 1 1 100%;
     }
-
     main {
         display: grid;
-        /*I'll decide further aspects of the grid*/
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
     }
+    #hero-img{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #currentEvents {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #spotlights {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #weather {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    
+
+    
 
     .card {
         max-width: none;

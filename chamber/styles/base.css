@@ -3,6 +3,8 @@
     --primary-text: #333;
     --secondary-background: #fff;
     --secondary-text: #1a237e;
+    --footer-background: #1a237e;
+    --footer-text: #fff;
 }
 
 * {
@@ -38,7 +40,7 @@ body {
     grid-row: 3/4;
     grid-column: 2/3;
     opacity: 60%;
-    font-size: 3em;
+    font-size: 2em;
 }
 #profile-image {
     width: 100px;
@@ -68,12 +70,14 @@ main, footer {
 
 h1 {
     font-size: 2rem;
+    text-align: center;
 }
 
 nav {
     background-color: #36454f;
     margin: 0 auto;
     max-width: 800px;
+    
 }
 
 nav ul {
@@ -174,7 +178,11 @@ main {
     font-size: 24px;
 }
 
-footer{
-    background-color: blue;
-    color: white;
+footer {
+    background-color: var(--footer-background);
+    padding: 10px;
+}
+footer *{
+    
+    color: var(--footer-text);
 }
