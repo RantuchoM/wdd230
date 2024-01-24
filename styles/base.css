@@ -156,6 +156,11 @@ main {
     font-size: 14px;
     
 }
+#map {
+	height: 200px;
+	width: 100%;
+}
+
 .card *{
     margin: 20px;
 }
