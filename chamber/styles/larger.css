@@ -1,59 +1,95 @@
 @media (min-width: 640px) {
-    
 
+    body {
+        max-width: 800px;
+    }
+    header {
+        width: 100%;
+    }
+  
     #menu {
-		display: none; /* hide hamburger button */
-	}
+        display: none;
+        /* hide hamburger button */
+    }
 
-	.navigation {
-		flex-direction: row;
-	}
+    .navigation {
+        flex-direction: row;
+    }
 
-	.navigation li {
-		display: block;
-		flex: 1 1 100%;
-	}
-	
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
     nav ul {
         display: flex;
     }
-    #join-btn{
+
+    #join-btn {
         font-size: 3em;
     }
+
     nav ul li {
         flex: 1 1 100%;
     }
-    main {
+
+    .home {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
     }
-    #hero-img{
+
+    #two-column-grid {
+        display: grid;
+        grid-template-columns: auto 400px;
+    }
+
+    #gallery {
+        grid-column: 2/3;
+    }
+    picture, picture * {
+        width: 100%;
+        height: auto;
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #333;
+        transform: scale(1.3);
+        z-index: 10;
+    }
+    
+
+    #hero-img {
         grid-column: 1/3;
         grid-row: 1/2;
     }
+
     #currentEvents {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     #spotlights {
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
     #weather {
         grid-column: 1/3;
         grid-row: 3/4;
     }
+
     h1 {
         font-size: 3rem;
     }
-    
 
-    
+
+
 
     .card {
         max-width: none;
-        margin: 20px; /* Adjust the margin to your preference */
+        margin: 20px;
+        /* Adjust the margin to your preference */
     }
-    
+
 }

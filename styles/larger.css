@@ -1,5 +1,7 @@
 @media (min-width: 640px) {
-    
+    body {
+        max-width: 1200px;
+    }
 
     #menu {
 		display: none; /* hide hamburger button */
@@ -21,13 +23,15 @@
     nav ul li {
         flex: 1 1 100%;
     }
+   
+    
 
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-
+    .hover:hover {box-shadow: 0 0 50px #333;}
     .card {
         max-width: none;
         margin: 5px; /* Adjust the margin to your preference */

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover - Bahía Blanca Chamber Site">
+    <meta name="author" content="Martín Rantucho">
+    <title>Bahía Blanca Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Bahía Blanca Chamber Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.bahia.gob.ar/wp-content/uploads/2017/01/WhatsApp-Image-2022-11-24-at-09.07.29.jpeg">
+    <meta property="og:url" content="https://rantuchom.github.io/wdd230/chamber">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/getDates.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Bahía Blanca Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a id="mode">☾</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="last-visit-div">
+            <span id="lastVisit"></span>
+        </section>
+        <section id="two-column-grid">
+            <section id="headings">
+                <h2>Information of Interest</h2>
+                <section class="card">
+                    <h3>Weather</h3>
+                    <p>Here I'll put an automate weather of Bahía Blanca</p>
+                </section>
+                <section class="card">
+                    <h3>Main Data</h2>
+                    <table>
+                        <tr>
+                            <th>Data</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>Bahía Blanca</td>
+                        </tr>
+                        <tr>
+                            <td>Founded</td>
+                            <td>1828</td>
+                        </tr>
+                        <tr>
+                            <td>Population</td>
+                            <td>301,572 (2010 census)</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td>2,247 km<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <td>Density</td>
+                            <td>134.2 inhabitants/km<sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <td>Climate</td>
+                            <td>Humid subtropical (Cfa)</td>
+                        </tr>
+                        <tr>
+                            <td>Mayor</td>
+                            <td>Héctor Gay</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section class="card">
+                    <h3>History</h3>
+                    <p><b>Foundation:</b>Bahía Blanca was founded in 1828 by Colonel Ramón Estomba, under the orders of
+                        Juan Manuel de Rosas, as a fortress to protect the area from cattle rustlers and Brazilian
+                        invaders. It was named after the white salt deposits that covered the shores of the bay, which
+                        was discovered by Ferdinand Magellan in 1520.</p>
+                    <p><b>Growth:</b> The city grew rapidly after the arrival of the railway in 1885, which facilitated
+                        the export of grain and wool from the region. It also attracted many immigrants from Europe,
+                        especially from Spain, Italy, France, Germany, and Eastern Europe.</p>
+                    <p><b>Industry and Commerce:</b> Today, Bahía Blanca is an important industrial and commercial
+                        center, as well as a gateway to the Patagonia. It has an important seaport with a depth of 15 m,
+                        where the Napostá Stream drains.</p>
+
+
+                </section>
+                <section class="card">
+                    <h3>Bahía Blanca Chamber of Commerce History</h3>
+
+                    <p>The Bahía Blanca Chamber of Commerce was founded in 1896 by a group of local businessmen who
+                        wanted to promote the economic development of the city and the region. They saw the potential of
+                        Bahía Blanca as a strategic port for the export of agricultural and industrial products, as well
+                        as a gateway to the Patagonia. They also wanted to attract more immigrants and investors from
+                        Europe and other countries, as well as to defend the interests of the local merchants and
+                        entrepreneurs.</p>
+                    <p>The Chamber of Commerce played an important role in the modernization and expansion of the city,
+                        supporting the construction of public works, such as roads, bridges, railways, waterworks, and
+                        electricity. It also organized trade fairs, exhibitions, conferences, and cultural events to
+                        showcase the products and services of Bahía Blanca and to foster the exchange of ideas and
+                        knowledge. It also established relations with other chambers of commerce and business
+                        associations from Argentina and abroad, creating a network of cooperation and solidarity.</p>
+                    <p>The Chamber of Commerce faced many challenges and difficulties throughout its history, such as
+                        wars, economic crises, social conflicts, and political changes. However, it always maintained
+                        its vision and mission of contributing to the progress and well-being of Bahía Blanca and its
+                        people. Today, the Chamber of Commerce continues to be a representative and influential
+                        institution in the city, with more than 2,000 members from different sectors and activities. It
+                        also keeps working to improve the competitiveness and sustainability of Bahía Blanca, as well as
+                        to strengthen its position as a regional hub and a global partner.</p>
+
+                </section>
+
+            </section>
+
+
+            <section id="gallery">
+                <h2>Gallery</h2>
+                <picture class="hover">
+                    <img src="images/img-1.webp" alt="Plaza Rivadavia, view from the Town Hall" loading="lazy"
+                        height="267" width="400">
+                    <figcaption>Plaza Rivadavia, view from the Town Hall</figcaption>
+                </picture>
+
+                <picture class="hover">
+                    <img src="images/img-2.webp" alt="Teatro Municipal" loading="lazy" height="268" width="400">
+                    <figcaption>Teatro Municipal</figcaption>
+                </picture>
+
+                <picture class="hover">
+                    <img src="images/img-3.webp" alt="Aerial view of Plaza Rivadavia" loading="lazy" height="500"
+                        width="400">
+                    <figcaption>Aerial view of Plaza Rivadavia</figcaption>
+                </picture>
+
+                <picture class="hover">
+                    <img src="images/img-8.webp" alt="Monumento" loading="lazy" height="500" width="400">
+                    <figcaption>Monumento</figcaption>
+                </picture>
+
+                <picture class="hover">
+                    <img src="images/img-4.webp" alt="Aerial view of Bahía Blanca" loading="lazy" height="500"
+                        width="400">
+                    <figcaption>Aerial view of Bahía Blanca</figcaption>
+                </picture>
+
+                <picture class="hover">
+                    <img src="images/img-5.webp" alt="Aerial view of Bahía Blanca" loading="lazy" height="500"
+                        width="400">
+                    <figcaption>Aerial view of Bahía Blanca</figcaption>
+                </picture>
+
+                <picture class="hover">
+                    <img src="images/img-6.webp" alt="Train of Bahía Blanca" loading="lazy" height="500" width="400">
+                    <figcaption>Train of Bahía Blanca</figcaption>
+                </picture>
+
+                <picture class="hover">
+                    <img src="images/img-7.webp" alt="Parque de Mayo" loading="lazy" height="500" width="400">
+                    <figcaption>Parque de Mayo</figcaption>
+                </picture>
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+        <a href="#">Contact Us</a>
+        <p>&copy; <span id="currentYear"></span> Martín Rantucho. Viedma, Argentina</p>
+        <p>WDD 230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+
+</body>
+
+</html>

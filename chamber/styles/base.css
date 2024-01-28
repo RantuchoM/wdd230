@@ -12,6 +12,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+figcaption {
+	text-align: center;
+}
+picture {
+    display: flex;
+    position: relative;
+    width: 400px;
+}
+
+picture figcaption {
+    position: absolute;
+    opacity: 0.7;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+}
+
+picture img{
+    height: auto;
+}
+
 
 body {
     font-family: 'Salsa', serif;
@@ -19,9 +42,13 @@ body {
     background-color: #f8f8f8;
     margin: 0;
     padding: 20px;
-    max-width: 800px;
+    max-width: 400px;
     margin: 0 auto;
+    justify-content: center;
+    
+    
 }
+
 #hero-img {
     width: 100%;
     
@@ -53,7 +80,25 @@ header {
     justify-content: center;
     padding: 20px;
     border: 1px solid var(--secondary-text);
+    text-align: center;
+    width: 400px;
+    position: relative;
+    z-index: 1;
 }
+
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: .25rem .75rem;
+    background-color: #eee;
+    color: var(--primary-text);
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 2; /* Set a higher z-index than header */
+    width: auto;
+}
+
 section h2 {
     font-family: 'Oswald', sans-serif;
     color: var(--secondary-text);
@@ -101,15 +146,18 @@ nav a:hover {
 
 
 #menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: .25rem .75rem;
-	background-color: #eee;
-	color: var(--primary-text);
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: .25rem .75rem;
+    background-color: #eee;
+    color: var(--primary-text);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    width: auto; /* Set width to auto to prevent narrowing */
 }
+
 
 #menu::before {
 	content: "☰";
@@ -140,7 +188,14 @@ nav a:hover {
 	color: #333;
 	font-weight: 700;
 }
-
+#last-visit-div {
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
 	display: block;
@@ -161,21 +216,36 @@ main {
 
 .card {
     max-width: 100%;
-    background-color: rgb(196, 195, 195);
-    margin: 20px;
+    background-color: var(--primary-background);
     font-size: 14px;
-    
+    padding-bottom: 20px;
+}
+.only-text p{
+    margin: 20px 20px 20px 20px;
 }
 .card *{
     margin: 20px;
+    padding: 10px;
+}
+
+table {
+    border: 2px solid var(--primary-text);
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--primary-text);
 }
 
 
-.card h2{
-    background-color: blue;
-    color: white;
+.card h2, .card h3{
+    background-color: var(--secondary-text);
+    color: var(--secondary-background);
     margin: 0px;
     font-size: 24px;
+    font-weight: lighter;
 }
 
 footer {
