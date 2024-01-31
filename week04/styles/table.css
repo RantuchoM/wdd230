@@ -1,0 +1,28 @@
+:root {
+    --text-header-color: white;
+    --text-header-font-weight: bold;
+    --header-background-color: gray;
+    --header-dark: black;
+    --zebra: rgb(105, 136, 105);
+}
+table, table * {
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+
+}
+th {
+    color: var(--text-header-color);
+    background-color: var(--header-background-color);
+    font-weight: var(--text-header-font-weight);
+}
+
+
+.dark {
+    background-color: var(--header-dark);
+}   
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
