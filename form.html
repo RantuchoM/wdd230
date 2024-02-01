@@ -56,16 +56,16 @@
             <fieldset>
                 <legend>Create a New User</legend>
 
-                <label class="top">Username *<input type="text" name="username" id="username" required></label>
+                <label class="top">Username *<input type="text" name="username" id="username" title="Please choose an username" required></label>
                 <label class="top">Password *<input type="password" name="pass1" id="pass1" pattern="[A-Za-z0-9]{8,}"
                         title="Eight or more characters" required></label>
                 <label class="top">Repeat Password *<input type="password" name="pass2" id="pass2"
                         pattern="[A-Za-z0-9]{8,}" title="Please repeat the password" required></label>
                 <label class="top">BYU E-mail<input type="email" name="email" id="email"
-                        title="Please enter a valid BYUI email address" required><div id="emailMessage"></div></label>
+                        title="Please enter a valid BYUI email address" placeholder="someone@byui.edu" required><div id="emailMessage"></div></label>
                 <label for="rating" class="top">Page Rating</label>
                 <div id="rangevalue">1</div>
-                <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues">
+                <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues" required>
                 <datalist id="rangevalues">
                     <option value="1">1</option>
                     <option value="2">2</option>
