@@ -1,4 +1,9 @@
 
+:root {
+    --main-colour: #445ba9;
+    --required-borders: solid 6px;
+    --input-font-colour: #555;
+}
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
@@ -10,14 +15,14 @@ main {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid var(--main-colour);
     border-radius: 10px;
     padding: .5rem 2%;
     
 }
 
 form legend {
-    color: #445ba9;
+    color: var(--main-colour);
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 2rem;
@@ -27,7 +32,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #445ba9;
+    color: var(--main-colour);
     font-size: 1rem;
 }
 
@@ -39,7 +44,7 @@ form label.top select {
     border: solid 1px #999;
     border-radius: 4px;
     padding: 0.75rem;
-    color: #555;
+    color: var(--input-font-colour);
     width: 100%;
     height: 44px;
     max-width: 20rem;
@@ -49,28 +54,28 @@ form label.top select {
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #555;
+    color: var(--input-font-colour);
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #445ba9;
+    background-color: var(--main-colour);
     color: white;
     border-radius: 1rem;
     padding: 0.75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
+    max-width: 15rem;
 }
 #rangevalue {
     font-size: 1.5rem;
 }
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: red var(--required-borders);
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border-left: green var(--required-borders);
 }
 
 
