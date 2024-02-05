@@ -351,6 +351,12 @@ form label.side {
     color: var(--input-font-colour);
 }
 
+p.side {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+}
+
 form li {
     margin-left: 20px;
 }
