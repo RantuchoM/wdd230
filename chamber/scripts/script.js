@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
     localStorage.setItem("numVisits-ls", currentDate);
 
 
-    // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
     
 });
 
