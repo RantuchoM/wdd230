@@ -5,11 +5,15 @@
             "links": [
                 {
                     "url": "week01/holygrail.html",
-                    "title": "HG Layout"
+                    "title": "Layout"
                 },
                 {
                     "url": "week01/media-query.html",
-                    "title": "MediaQuery"
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/WNmoPBJ",
+                    "title": "JS Pen"
                 }
             ]
         },
@@ -17,12 +21,71 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url":"https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/mdowPgZ",
+                    "url": "https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/mdowPgZ",
                     "title": "Hamburguer Pen"
                 },
                 {
                     "url": "week02/bom.html",
                     "title": "BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazy-loading.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/jOJYjWJ",
+                    "title": "Pseudo-Classes"
+                },
+                {
+                    "url": "images/combinators-screenshot.png",
+                    "title": "Combinator's Screenshot"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Table"
+                },
+                {
+                    "url": "week04/form-start/index.html",
+                    "title": "Form Practice"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form - Group Activity"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/NWJzMYo?editors=1100",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
                 }
             ]
         }
