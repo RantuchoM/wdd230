@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
       let li = document.createElement('li');
       let aList = [];
 
-      // Create the week text
+      
       let weekText = document.createTextNode(`${week.week}: `);
       li.appendChild(weekText);
 
-      // Create <a> elements for each link
+      
       week.links.forEach(link => {
         let a = document.createElement('a');
         a.href = link.url;
@@ -27,16 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
         aList.push(a);
       });
 
-      // Append <a> elements to the <li> joined by " | "
+     
       aList.forEach((a, index) => {
         li.appendChild(a);
         if (index < aList.length - 1) {
-          let separator = document.createTextNode(" | ");
+          let separator = document.createTextNode("|");
           li.appendChild(separator);
         }
       });
 
-      // Append the <li> to the section
+      
       section.appendChild(li);
     });
   }
