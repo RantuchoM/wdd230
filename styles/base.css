@@ -121,7 +121,18 @@ section {
 	height: 100%;
 	object-fit: cover;
 }
+.card figure {
+	display: inline-block; 
+	vertical-align: middle;
+}
 
+.card figure img {
+	width: 30px;
+}
+.card p, .card span, .card div, .card figure {
+	margin: 2px;
+	text-align: center;
+}
 picture {
 	width: 100%;
 }
