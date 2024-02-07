@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    margin: 10px;
+    text-align: center;
+
+}
+
+.grid section {
+    display: block;
+    margin: 10px;
+    background-color: rgb(182, 182, 214);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+img {
+    margin-bottom: 20px;
+    box-shadow: 0 0 50px #333;
+    border-radius: 10px;
+
+
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 'bold';
+    font-size: 2rem;
+}

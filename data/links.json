@@ -1,0 +1,30 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "MediaQuery"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url":"https://codepen.io/Mart-n-Rantucho-the-typescripter/pen/mdowPgZ",
+                    "title": "Hamburguer Pen"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "BOM"
+                }
+            ]
+        }
+    ]
+}
