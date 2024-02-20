@@ -546,7 +546,9 @@ th {
     flex-direction: column;
     align-items: center;
     background-color: rgb(206, 203, 203);
-    box-shadow: #333 inset;
+    box-shadow: 2px 1px 1px gray;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-top: 20px;
     padding: 10px;
 }
