@@ -1,5 +1,10 @@
-document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", async function () {
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 
-document.getElementById("timestamp").value = new Date().toISOString();
+    const timestampElement = document.getElementById("timestamp");
+    if (timestampElement) {
+        timestampElement.value = new Date().toISOString();
+    }
+})

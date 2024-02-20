@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             const response = await fetch(urlW);
             if (response.ok) {
                 const data = await response.json();
-                console.log(data); // testing only
                 displayResults(data); // uncomment when ready
             } else {
                 throw Error(await response.text());
@@ -125,7 +124,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             const response = await fetch(urlForecast);
             if (response.ok) {
                 const data = await response.json();
-                console.log(data); // testing only
                 displayForecast(data);
             } else {
                 throw Error(await response.text());
@@ -138,7 +136,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     function displayForecast(data) {
         const array = data.list;
         let forecast = document.getElementById('forecast');
-        console.log(forecast);
         const hours = [8, 16, 24];
         for (let i = 0; i < hours.length; i++) {
             let day = array[hours[i]];
@@ -150,10 +147,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             weatherIcon.setAttribute('src', iconsrc);
             weatherIcon.setAttribute('alt', `Icon of ${day.weather[0].main}`);
             main.textContent = day.weather[0].main;
-            console.log(day.dt_txt);
             date.textContent = formatDate(day.dt_txt);
-            console.log(`${day.weather[0].main}`)
-            console.log(date);
             section.appendChild(date);
             section.appendChild(weatherIcon);
             section.appendChild(main); 

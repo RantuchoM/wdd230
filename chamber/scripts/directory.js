@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const results = await fetch(url);
         const data = await results.json();
         directory.innerHTML = '';
-        console.table(data.companies);
+        //console.table(data.companies);
         displayCompanies(data.companies, style);
     }
     const displayCompanies = (companies, style) => {

@@ -38,22 +38,28 @@ document.addEventListener('DOMContentLoaded', function () {
     // 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
     let lastVisit = Number(window.localStorage.getItem("numVisits-ls"));
     let difference = (currentDate - lastVisit) / msToDays;
+    if (visitsDisplay) {
+        if (!lastVisit) {
+            displayBanner("Welcome! Let us know if you have any questions.");
+        } else if (difference < 1) {
+            displayBanner("Back so soon! Awesome!");
+        } else {
+            displayBanner(`You last visited ${Math.ceil(difference)} days ago.`);
+        }
 
-    if(!lastVisit) {
-        visitsDisplay.textContent = "Welcome! Let us know if you have any questions."
+        // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
+        localStorage.setItem("numVisits-ls", currentDate);
+
+        function displayBanner(message) {
+            visitsDisplay.textContent = message;
+            visitsDisplay.style.display = "block";
+            setTimeout(function () {
+                visitsDisplay.style.display = "none";
+            }, 5000); // 5 seconds
+        }
     }
-    else if(difference < 1) {
-        visitsDisplay.textContent = "Back so soon! Awesome!"
-    }
-    else {
-        visitsDisplay.textContent = `You last visited ${Math.ceil(difference)} days ago.`
-    };
-
-    // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
-    localStorage.setItem("numVisits-ls", currentDate);
 
 
-    
 });
 
 
