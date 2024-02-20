@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded",function (){
+document.addEventListener("DOMContentLoaded", function () {
 
 
     const url = 'https://rantuchom.github.io/wdd230/chamber/data/members.json';
@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded",function (){
     const displayCompanies = (companies) => {
         companies.forEach((company) => {
             let card = document.createElement('section');
-            let name = document.createElement('h2'); 
+            let name = document.createElement('h2');
             let img = document.createElement('img');
             let address = document.createElement('p');
             let phone = document.createElement('p');
 
             // Build the h2 content out to show the company's full name
-            name.textContent = company.name; 
+            name.textContent = company.name;
             // Build the image portrait by setting all the relevant attributes
             img.setAttribute('src', company.image);
             img.setAttribute('alt', `Logo of ${company.name}`);
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded",function (){
             phone.textContent = `Phone: ${company.birthplace}`;
 
             // Append the section(card) with the created elements
-            card.appendChild(name); 
+            card.appendChild(name);
             card.appendChild(address);
             card.appendChild(phone);
             card.appendChild(img);
@@ -44,4 +44,24 @@ document.addEventListener("DOMContentLoaded",function (){
     }
 
     getCompanyData();
+
+    const gridbutton = document.querySelector("#grid");
+    const listbutton = document.querySelector("#list");
+    const display = document.querySelector("article");
+
+   
+
+    gridbutton.addEventListener("click", () => {
+        n
+        display.classList.add("directoryGrid");
+        display.classList.remove("directoryList");
+    });
+
+    listbutton.addEventListener("click", showList); 
+
+    function showList() {
+        display.classList.add("directoryList");
+        display.classList.remove("directoryGrid");
+    }
+
 });

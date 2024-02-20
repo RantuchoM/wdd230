@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://rantuchom.github.io/wdd230/chamber">
     <meta name="twitter:card" content="summary_large_image">
 
-    <script src="scripts/discover.js"></script>
+    <script src="scripts/directory.js"></script>
     <script src="scripts/getDates.js"></script>
 </head>
 
@@ -35,16 +35,20 @@
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a id="mode">☾</a></li>
         </ul>
     </nav>
     <main>
+        <div id="directoryMenu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
         <div id="cards" class="grid"></div>
-        
+
     </main>
     <footer>
         <a href="#">Contact Us</a>

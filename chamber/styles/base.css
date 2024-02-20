@@ -415,6 +415,20 @@ label[for="membership"] {
 }
 
 
+/*--------------------- DIRECTORY ---------------------*/
+#directoryMenu{
+    display:grid;
+    grid-template-columns: auto 100px 100px auto;
+    gap: 50px;
+    height: 30px;
+    
+}
+#grid {
+    grid-column: 2/3;
+}
+#list {
+    grid-column: 3/4;
+}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -423,3 +437,5 @@ label[for="membership"] {
     display: table;
     clear: both;
 }
+
+
