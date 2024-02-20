@@ -89,7 +89,7 @@ header {
     padding: 20px;
     border: 1px solid var(--secondary-text);
     text-align: center;
-    width: 400px;
+
     position: relative;
     z-index: 1;
 }
@@ -114,7 +114,7 @@ section h2 {
     border-bottom: 2px solid var(--secondary-text);
     padding-bottom: 5px;
     margin-bottom: 20px;
-    text-align: left !important;
+    text-align: left;
 }
 
 header,
@@ -416,19 +416,70 @@ label[for="membership"] {
 
 
 /*--------------------- DIRECTORY ---------------------*/
-#directoryMenu{
-    display:grid;
-    grid-template-columns: auto 100px 100px auto;
+#directoryMenu {
+    display: grid;
+    grid-template-columns: auto 150px auto;
     gap: 50px;
     height: 30px;
-    
+
 }
-#grid {
+
+
+#toggleView {
     grid-column: 2/3;
 }
-#list {
-    grid-column: 3/4;
+
+
+
+.directoryTable {
+    width: 100%;
+
 }
+
+.directoryTable th,
+.directoryTable td {
+    padding: 8px;
+    font-size: 0.6em;
+    font-family: 'Arial', sans-serif;
+    min-width: 60px;
+    font-stretch: condensed;
+    word-break: break-all;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(204, 203, 203);
+}
+
+th {
+    background-color: lightblue;
+}
+
+.directoryGrid {
+    display: grid;
+    max-width: 767px;
+    grid-template-columns: 1fr;
+}
+
+#directory img{
+    height: 100px;
+    width: auto;
+    
+}
+
+#directory section {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px;
+    margin: 10px;
+    border: #1a237e solid 1px;
+    text-align: left;
+}
+#directory section h2 {
+    text-align: center;
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -437,5 +488,3 @@ label[for="membership"] {
     display: table;
     clear: both;
 }
-
-

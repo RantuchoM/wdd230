@@ -2,66 +2,113 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const url = 'https://rantuchom.github.io/wdd230/chamber/data/members.json';
-    const cards = document.querySelector('#cards');
+    const directory = document.querySelector('#directory');
 
 
 
-    async function getCompanyData() {
+    async function getDirectoryData(style) {
         const results = await fetch(url);
         const data = await results.json();
+        directory.innerHTML = '';
         console.table(data.companies);
-        displayCompanies(data.companies);
+        displayCompanies(data.companies, style);
     }
-    const displayCompanies = (companies) => {
-        companies.forEach((company) => {
-            let card = document.createElement('section');
-            let name = document.createElement('h2');
-            let img = document.createElement('img');
-            let address = document.createElement('p');
-            let phone = document.createElement('p');
+    const displayCompanies = (companies, style) => {
+        if (style === 'card') {
+            companies.forEach((company) => {
 
-            // Build the h2 content out to show the company's full name
-            name.textContent = company.name;
-            // Build the image portrait by setting all the relevant attributes
-            img.setAttribute('src', company.image);
-            img.setAttribute('alt', `Logo of ${company.name}`);
-            img.setAttribute('loading', 'lazy');
-            img.setAttribute('width', '340');
-            img.setAttribute('height', '440');
+                let card = document.createElement('section');
+                let name = document.createElement('h2');
+                let img = document.createElement('img');
+                let address = document.createElement('p');
+                let phone = document.createElement('p');
 
-            address.textContent = `Address: ${company.address}`;
-            phone.textContent = `Phone: ${company.birthplace}`;
 
-            // Append the section(card) with the created elements
-            card.appendChild(name);
-            card.appendChild(address);
-            card.appendChild(phone);
-            card.appendChild(img);
+                name.textContent = company.name;
 
-            cards.appendChild(card);
+                img.setAttribute('src', company.image);
+                img.setAttribute('alt', `Logo of ${company.name}`);
+                img.setAttribute('loading', 'lazy');
+                img.setAttribute('width', '340');
+                img.setAttribute('height', '440');
 
-        })
+                address.textContent = `Address: ${company.address}`;
+                phone.textContent = `Phone: ${company.phone}`;
+
+                // Append the section(card) with the created elements
+                card.appendChild(img);
+                card.appendChild(name);
+                card.appendChild(address);
+                card.appendChild(phone);
+
+
+                directory.appendChild(card);
+            });
+        }
+        else {
+
+            let table = document.createElement('table');
+            table.classList.add('directoryTable');
+
+            // Create header row
+            let headerRow = table.insertRow();
+            let headerNames = ['Name', 'Address', 'Phone', 'Website', 'Membership Level', 'Other Info'];
+
+
+            headerNames.forEach(headerName => {
+                let headerCell = document.createElement('th');
+                headerCell.textContent = headerName;
+                headerRow.appendChild(headerCell);
+            });
+
+
+            companies.forEach((company) => {
+                let row = table.insertRow();
+
+
+                let nameCell = row.insertCell(0);
+                let addressCell = row.insertCell(1);
+                let phoneCell = row.insertCell(2);
+                let websiteCell = row.insertCell(3);
+                let membershipCell = row.insertCell(4);
+                let otherInfoCell = row.insertCell(5);
+
+                nameCell.textContent = company.name;
+                addressCell.textContent = company.address;
+                phoneCell.textContent = company.phone;
+                websiteCell.textContent = company.website;
+                membershipCell.textContent = company.membership_level;
+                otherInfoCell.textContent = company.other_info;
+            });
+
+            directory.appendChild(table);
+        }
+
+
+
+
+
     }
 
-    getCompanyData();
+    getDirectoryData("grid");
 
-    const gridbutton = document.querySelector("#grid");
-    const listbutton = document.querySelector("#list");
-    const display = document.querySelector("article");
+    const toggleButton = document.querySelector("#toggleView");
+const display = document.querySelector("#directory");
 
-   
+toggleButton.addEventListener("click", toggleView);
 
-    gridbutton.addEventListener("click", () => {
-        n
-        display.classList.add("directoryGrid");
-        display.classList.remove("directoryList");
-    });
-
-    listbutton.addEventListener("click", showList); 
-
-    function showList() {
-        display.classList.add("directoryList");
+function toggleView() {
+    if (display.classList.contains("directoryGrid")) {
         display.classList.remove("directoryGrid");
+        display.classList.add("directoryList");
+        toggleButton.textContent = "⏹️ Grid";
+        getDirectoryData("list");
+    } else {
+        display.classList.remove("directoryList");
+        display.classList.add("directoryGrid");
+        toggleButton.textContent = "📄 List";
+        getDirectoryData("card");
     }
+}
 
 });
