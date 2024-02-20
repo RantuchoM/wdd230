@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 let img = document.createElement('img');
                 let address = document.createElement('p');
                 let phone = document.createElement('p');
+                let website = document.createElement('p');
+                let membership = document.createElement('p');
+                let otherInfo = document.createElement('p');
+                
 
 
                 name.textContent = company.name;
@@ -32,14 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 img.setAttribute('width', '340');
                 img.setAttribute('height', '440');
 
-                address.textContent = `Address: ${company.address}`;
-                phone.textContent = `Phone: ${company.phone}`;
+                address.innerHTML = `<b>Address:</b> ${company.address}`;
+                phone.innerHTML = `<b>Phone:</b> ${company.phone}`;
+                website.innerHTML = `<a href="${company.website}">Website</a>`;
+                membership.innerHTML = `<b>Membership:</b> ${company.membership_level}`;
+                otherInfo.innerHTML = `<i>${company.other_info}</i>`;
 
                 // Append the section(card) with the created elements
                 card.appendChild(img);
                 card.appendChild(name);
                 card.appendChild(address);
                 card.appendChild(phone);
+                card.appendChild(website);
+                card.appendChild(membership);
+                card.appendChild(otherInfo);
 
 
                 directory.appendChild(card);
@@ -76,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 nameCell.textContent = company.name;
                 addressCell.textContent = company.address;
                 phoneCell.textContent = company.phone;
-                websiteCell.textContent = company.website;
+                websiteCell.innerHTML = `<a href="${company.website}">Website</a>`;
                 membershipCell.textContent = company.membership_level;
                 otherInfoCell.textContent = company.other_info;
             });

@@ -458,6 +458,8 @@ th {
     display: grid;
     max-width: 767px;
     grid-template-columns: 1fr;
+    font-family: 'Arial', sans-serif;
+   
 }
 
 #directory img{
@@ -474,7 +476,10 @@ th {
     padding: 15px;
     margin: 10px;
     border: #1a237e solid 1px;
-    text-align: left;
+    text-align: center;
+}
+#directory section p {
+    margin-bottom: 5px;
 }
 #directory section h2 {
     text-align: center;
