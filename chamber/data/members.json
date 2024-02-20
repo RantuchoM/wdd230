@@ -1,0 +1,95 @@
+{
+    "companies": [
+      {
+        "name": "Tecnología Innovadora S.A.",
+        "address": "Av. Tecnológica 123, Buenos Aires, CABA",
+        "phone": "+54 (11) 1234-5678",
+        "website": "http://www.tecnologiainnovadora.com.ar",
+        "image": "company01.webp",
+        "membership_level": "Gold",
+        "other_info": "Principal proveedor de soluciones tecnológicas innovadoras."
+      },
+      {
+        "name": "Grupo Logístico Argentino",
+        "address": "Calle Logística 456, Rosario, Santa Fe",
+        "phone": "+54 (341) 987-6543",
+        "website": "http://www.grupologistico.com.ar",
+        "image": "company02.webp",
+        "membership_level": "Silver",
+        "other_info": "Ofreciendo soluciones logísticas integrales en Argentina."
+      },
+      {
+        "name": "Soluciones Biotecnológicas S.R.L.",
+        "address": "Av. Biotecnología 789, Córdoba, Córdoba",
+        "phone": "+54 (351) 321-0987",
+        "website": "http://www.solucionesbiotecnologicas.com.ar",
+        "image": "company03.webp",
+        "membership_level": "Bronze",
+        "other_info": "Especialistas en investigación y desarrollo farmacéutico innovador."
+      },
+      {
+        "name": "Dinámica Energética S.A.",
+        "address": "Av. Energía Renovable 101, Mendoza, Mendoza",
+        "phone": "+54 (261) 456-7890",
+        "website": "http://www.dinamicaenergetica.com.ar",
+        "image": "company04.webp",
+        "membership_level": "Gold",
+        "other_info": "Pioneros en soluciones de energía renovable para un futuro sostenible."
+      },
+      {
+        "name": "Estudios de Diseño Creativo",
+        "address": "Av. Artística 246, Mar del Plata, Buenos Aires",
+        "phone": "+54 (223) 789-0123",
+        "website": "http://www.estudioscreativos.com.ar",
+        "image": "company05.webp",
+        "membership_level": "Silver",
+        "other_info": "Agencia de diseño innovadora especializada en branding y experiencias digitales."
+      },
+      {
+        "name": "Estrategias Financieras S.A.",
+        "address": "Av. Finanzas 369, Salta, Salta",
+        "phone": "+54 (387) 012-3456",
+        "website": "http://www.estrategiasfinancieras.com.ar",
+        "image": "company06.webp",
+        "membership_level": "Bronze",
+        "other_info": "Brindando asesoramiento financiero experto y servicios de gestión patrimonial."
+      },
+      {
+        "name": "Grupo de Soluciones de Salud",
+        "address": "Av. Médica 789, La Plata, Buenos Aires",
+        "phone": "+54 (221) 234-5678",
+        "website": "http://www.gruposolucionesdesalud.com.ar",
+        "image": "company07.webp",
+        "membership_level": "Gold",
+        "other_info": "Comprometidos en mejorar la salud a través de soluciones tecnológicas innovadoras."
+      },
+      {
+        "name": "Ventas de Hospitalidad S.A.",
+        "address": "Av. Hospitalidad 963, San Miguel de Tucumán, Tucumán",
+        "phone": "+54 (381) 567-8901",
+        "website": "http://www.ventashospitalidad.com.ar",
+        "image": "company08.webp",
+        "membership_level": "Silver",
+        "other_info": "Empresa líder en hospitalidad ofreciendo experiencias excepcionales para los huéspedes."
+      },
+      {
+        "name": "Soluciones de Manufactura S.R.L.",
+        "address": "Av. Industrial 147, Bahía Blanca, Buenos Aires",
+        "phone": "+54 (291) 890-1234",
+        "website": "http://www.solucionesmanufactura.com.ar",
+        "image": "company09.webp",
+        "membership_level": "Bronze",
+        "other_info": "Proveedor de soluciones de fabricación avanzadas para diversas industrias."
+      },
+      {
+        "name": "Grupo de Tecnologías Educativas",
+        "address": "Av. del Aprendizaje 258, San Juan, San Juan",
+        "phone": "+54 (264) 345-6789",
+        "website": "http://www.grupotecnologiaseducativas.com.ar",
+        "image": "company10.webp",
+        "membership_level": "Gold",
+        "other_info": "Transformando la educación a través de tecnología innovadora y soluciones de aprendizaje."
+      }
+    ]
+  }
+  
